@@ -238,7 +238,7 @@ nav ul li:hover {
 
 footer {
     background-color: #111;
-    width: 100%;
+    width: auto;
     height: 250px;
     text-align: center;
     font-size: 20px;

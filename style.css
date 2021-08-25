@@ -4,6 +4,19 @@
 }
 
 
+
+::-webkit-scrollbar {
+    background-color: black;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #blueviolet;
+}
+
+
+
 body {
     background-color: #222;
     color: white;

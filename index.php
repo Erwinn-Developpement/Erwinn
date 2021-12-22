@@ -98,7 +98,7 @@
 
 
     <div class="description">
-        <h3>Bonjour je m'appelle Erwinn et je suis un développeur web front-end débutant ainsi qu'un débutant en développement d'application C# (Xamarin). Ma passion est la programmation depuis longtemps.</h3>
+        <h3>Bonjour je m'appelle Erwinn et je suis un développeur web front-end débutant ainsi que futur développeur de jeux vidéo avec Unreal Engine. Ma passion est la programmation depuis longtemps.</h3>
     </div>
 
 
@@ -139,6 +139,31 @@
         <h4>&copy; Tout droits réservés - 2021</h4>
 
         <h5>Erwinn-Developpeur - Portfolio</h5>
+        
+        
+        
+        <?php
+session_start();
+if(file_exists('compteur_visites.txt'))
+{
+        $compteur_f = fopen('compteur_visites.txt', 'r+');
+        $compte = fgets($compteur_f);
+}
+else
+{
+        $compteur_f = fopen('compteur_visites.txt', 'a+');
+        $compte = 0;
+}
+if(!isset($_SESSION['compteur_de_visite']))
+{
+        $_SESSION['compteur_de_visite'] = 'visite';
+        $compte++;
+        fseek($compteur_f, 0);
+        fputs($compteur_f, $compte);
+}
+fclose($compteur_f);
+echo 'Ce site a recu <strong>'.$compte.'</strong> visites.';
+?>
     </footer>
  
 </svg>

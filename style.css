@@ -4,22 +4,25 @@
 }
 
 
-
-::-webkit-scrollbar {
-    background-color: #222;
-}
-
-
-
-::-webkit-scrollbar-thumb {
-    background-color:  #444;
-}
-
-
-
 body {
     background-color: #222;
     color: white;
+}
+
+::-webkit-scrollbar {
+    background-color:#333;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000;
 }
 
 
@@ -191,6 +194,63 @@ nav ul li:hover {
 }
 
 
+.div-info {
+    background-color: rgb(35, 41, 65);
+    box-shadow: 1px 2px 13px rgb(1, 6, 27);
+    height: 250px;
+    width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+    border: #111 solid 2px;
+}
+
+
+.div-info h2 {
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 10px 8px  rgb(1, 6, 27);
+}
+
+.div-info h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.div-info p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    text-shadow: 10px 8px  rgb(1, 6, 27);
+    -webkit-text-stroke: 1px white;
+}
+
+
+
+.button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(245, 227, 227);
+    border-radius: 5pxa;
+    color: #111;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 3px solid rgb(1, 6, 27);
+    transition: 0.5s
+}
+
+.button:hover {
+    background-color: rgb(1, 6, 27);
+    color: rgb(245, 227, 227);
+}
+
+
+.button h3 {
+    text-align: center;
+}
+
 
 
 
@@ -328,9 +388,8 @@ footer h5 {
 
 }
 
-
-@media screen and (max-width: 400px) {
-    footer {
-        width: 100%;
+@media screen and (max-width: 850px) {
+    .div-info {
+        width: 200px;
     }
 }

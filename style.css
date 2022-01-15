@@ -227,6 +227,15 @@ nav ul li:hover {
 }
 
 
+#info1 {
+    height: 400px;
+}
+
+
+#info2 {
+    heihgt: 600px;
+}
+
 
 .button {
     width: 130px;

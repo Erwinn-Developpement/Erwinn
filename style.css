@@ -391,5 +391,6 @@ footer h5 {
 @media screen and (max-width: 850px) {
     .div-info {
         width: 200px;
+        height: 100%;
     }
 }

@@ -390,17 +390,9 @@ footer h5 {
 
 @media screen and (max-width: 850px) {
     .div-info {
-        width: 200px;
-        height: 100%;
+        display: none;
     }
     
-    #info1 {
-    height: 400px;
 }
 
 
-#info2 {
-    heihgt: 600px;
-}
-
-}

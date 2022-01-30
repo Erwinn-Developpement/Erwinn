@@ -375,7 +375,7 @@ footer h5 {
 
     .description {
         width: 400px;
-        margin-left: 0%;
+        margin-left: auto;
         margin-right: auto;
     }
 

@@ -115,6 +115,66 @@ nav > ul li:hover .sous{
 /*______________________________________*/
 
 
+	
+
+/* SLIDER */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+
+.item-1, 
+.item-2
+{
+    position: absolute;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 20px;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+    position: absolute;
+    width: 70%;
+    font-size: 25px;
+    margin-top: 20px;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 35%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 30%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 17%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+
+/*___________________________________________*/
 
 img {
 

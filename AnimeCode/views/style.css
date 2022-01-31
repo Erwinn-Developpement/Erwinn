@@ -168,7 +168,7 @@ nav > ul li:hover .sous{
 
 @keyframes anim-3 {
 	0%, 66.66% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 30%; opacity: 1; }
+  74.96%, 91.62% { left: 35%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
 

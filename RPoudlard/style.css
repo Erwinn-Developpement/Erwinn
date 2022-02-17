@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url('./img/background.jpg') no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    animation: h1 1s infinite;
+}
+
+/* Door */
+
+#door {
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+.door {
+    background: url('./img/door.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.door:hover {
+    background: url('./img/door_open.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.door p{
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* Animations */
+
+@keyframes h1 {
+
+    to {
+        color: brown;
+    }
+
+    from {
+        color: rgb(107, 32, 22);
+    }
+    
+}

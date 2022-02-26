@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeCode - contact</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/png" href="../Images/brush.png" />
+	<!--Embed Link-->
+	<meta name="title" content="AnimeCode" />
+	<meta name="description" content="Trouvez une animation pour votre site !" />
+	<meta name="keywords" content="animation, css, code" />
+	<meta name="robots" content="All" />
+	<meta http-equiv="content-type" content="text/html" charset="iso-8859-1" />
+	<meta name="language" content="fr" />
+</head>
+<body>
+
+  <nav id="haut">
+    <ul>
+      <li class="deroulant"><a href="#">Animations &ensp;</a>
+        <ul class="sous">
+          <li><a href="#secouement">Secouement</a></li>
+          <li><a href="#rotation">Rotation</a></li>
+          <li><a href="#multicolor">Multicouleur</a></li>
+        </ul>
+      </li>
+      <li class="deroulant"><a href="#">Proposer une Animation &ensp;</a>
+        <ul class="sous">
+          <li><a href="#" onclick="OpenWindow()">Mail</a></li>
+          <li><a href="#">Discord : &lt;/Erwinn&gt;#8969</a></li>
+        </ul>
+      </li>
+      <li><a href="../menu/contact.html">Contact</a></li>
+      <li><a href="../menu/news.html">Nouveautés</a></li>
+    <li id="log" class="deroulant"><a href="../login/login.php" >Login</a>
+    <ul class="sous">
+      <li><a href="../login/inscription.php">Sign up</a></li>
+      <li><a href="../login/connexion.php" >Sign in</a></li>
+    </ul>
+    </li>
+    </ul>
+  </nav>
+
+      <h1>Contact</h1>
+
+      <h2>Vous pouvez me retrouver sur :</h2>
+      <br><br><br><br><br><br><br><br>
+      <h3><a href="">GitHub</a></h3>
+      <br>
+      <h3><a href="">Replit</a></h3>
+      <br>
+      <h3><a href="">Discord : &lt;/Erwinn&gt;#8969</a></h3>
+
+
+      <footer>
+        <h1>AnimeCode</h1>
+    
+        <form id="mail" name="eMailer" >
+          <p face="Verdana" size="4" color="#ffffff">Partager le site</p>
+          <input type="text" name="address" size="25" placeholder="Email de la personne">
+          <input id="btn" type="button" value="Partager" onClick="mailThisUrl();">
+        </form>
+      </div>
+    
+        <p>&copy; Tous droits résérvés</p>
+        <p><a href="https://erwinn-developpement.github.io/Erwinn" target="_blank">Erwinn-Développement</a></p>
+        <br>
+        <p style="font-size: 10px;"><a href="../admins/index.php" target="_blank">Espace Administrateurs</a></p>
+    
+      </footer>
+      
+    </body>
+    </html>
+    
+    
+    
+    <script language="JavaScript1.2">
+      //Anti clique droit
+    function refresh()
+      {document.location.reload();
+        return false;}
+      document.oncontextmenu = refresh;
+    
+    </script>
+    
+    
+    
+    <script language="JavaScript1.2">
+      var good;
+      function checkEmailAddress(field) {
+      var goodEmail = field.value.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi);
+      if (goodEmail){ good = true
+      } else { alert('Entrez une adresse mail valide')
+      field.focus()
+      field.select()
+      good = false
+      }}
+      u = window.location;
+      m = "AnimeCode - Propose ton anomation";
+      function mailThisUrl(){
+      good = false
+      checkEmailAddress(document.eMailer.address)
+      if (good){
+      mess="mailto:"+document.eMailer.address.value+"?subject="+m+"&body="+document.title+" "+u;
+      window.location = mess
+      alert("Merci pour votre soutiens !")
+         }
+      }
+    
+    
+    
+    
+      function OpenWindow()
+                            {
+                window.open('../menu/mail.html','Proposer une Animation','width=700px, height=700px','resizable=no');
+            }
+    
+    
+      
+      
+      </script>
+    
+    
+</body>
+</html>
+
+
+<style>
+  h1 {
+    text-align: center;
+
+  }
+
+  h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+
+  /* NAVBARRE */
+
+  
+header h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* MENU DEROULANT */
+/*Reset CSS*/
+
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #702a85;
+    position: sticky;
+    top: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: #320E3B;
+    border-bottom: 2px solid #320E3B;
+}
+
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #DDFBD2;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+
+#log {
+    width: 100px;
+    background:  #320E3B;
+}
+
+
+/* FOOTER */
+footer {
+    background: rgb(0, 0, 0);
+    color: lavender;
+    text-align: center;
+    height: 350px;
+    margin-top: 100px;
+}
+
+
+footer h1 {
+    padding-top: 50px;
+}
+
+
+footer a {
+    padding-top: 15px;
+    text-decoration: none;
+    color: #702a85;
+}
+
+
+footer form {
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+
+footer #btn {
+    background-color: #702a85;
+    border: solid #320E3B 2px;
+}
+
+footer input {
+    border: solid #320E3B 2px;
+    height: 30px;
+}
+
+</style>

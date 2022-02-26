@@ -117,8 +117,7 @@ nav > ul li:hover .sous{
 
 
 #log {
-    width: 100px;
-    background:  #320E3B;
+    width: 10%;
 }
 /*______________________________________*/
 
@@ -274,6 +273,29 @@ footer input {
 	}
 }
 
+/* Responsive */
 
+ @media screen and (max-width: 1000px) {
+     nav ul li {
+         width: 20%;
+         font-size: small;
+     }
+
+     #log {
+         width: 20%;
+     }
+
+     .item-1 {
+         display: none;
+     }
+
+     .item-2 {
+         display: none;
+     }
+
+     .item-3 {
+         display: none;
+     }
+ }
 
  

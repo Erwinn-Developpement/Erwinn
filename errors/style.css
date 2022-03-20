@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+::selection {
+    background-color: #320E3B;
+    color: #702a85;
+}
+
+
+::-webkit-scrollbar {
+    background-color: #702a85;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #320E3B;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Roboto' sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+}

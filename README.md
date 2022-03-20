@@ -1,3 +1,3 @@
 # Portfolio
 Mon portfolio
-Toute utilisation ou vente est strictement interdite.
+Toute copie ou vente est strictement interdite.

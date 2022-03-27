@@ -133,7 +133,7 @@ body {
 
 a {
     text-decoration: none;
-    color: blueviolet;
+    color: #850d0d;
 }
 
 
@@ -144,7 +144,7 @@ nav {
 
 nav ul li {
     display: inline-block;
-    color: blueviolet;
+    color: #850d0d;
 }
 
 

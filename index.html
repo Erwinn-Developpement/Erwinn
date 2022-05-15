@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erwinn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Erwinn</h1>
+
+    <div id="menu-button">
+        <button onclick="competences(this)" name="competences"> <img src="../img/icon-competences.png" alt=""> Compétences</button>
+    <button onclick="projets(this)" name="projets"> <img src="../img/icon-projets.png" alt=""> Projets</button>
+    <button onclick="contact(this)" name="contact"> <img src="../img/icon-contact.png" alt=""> Contact</button>
+    </div>
+
+    <div id="menu-text">
+
+        <div id="welcome">
+            <p>Bienvenue sur mon portfolio !</p>
+        </div>
+
+        <div id="competences">
+            <h1>Mes compétences</h1>
+
+            <p>Je suis développeur web front-end, je développe en HTML et CSS depuis plus de 2ans (Premier confinement) et je code des bots discord en python avec la librairie discord.py depuis quelques mois.</p>
+        </div>
+        <div id="projets">
+            <h1>Mes Projets</h1>
+            <p>J'ai était développeur web front-end pour l'Anonybot. Vous pouvez retrouver mes sites sur <a href="https://github.com/Erwinn-Developpement">Github</a>.</p>
+            <div id="projects">
+                <h2>Projet en développement :</h2>
+                <div class="projects">
+                    <h2>ShareCode</h2>
+                    <hr>
+                    <p>ShareCode est un réseau social pour les développeurs. Vous y trouverez une partie blog/Forum ainsi qu'un système d'ami.Vous pourrez y créer votre propre portfolio sur votre profil.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Contactez moi</h1>
+            <p>Je posséde une chaine youtube nommée <a href="https://www.youtube.com/channel/UCm5sZPHJAgaL-BTQNRG00Qw">CyberCode</a> je suis également sur discord : &lt;/Erwinn&gt; #8969</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Portfolio &copy; Tout droits résérvés</p>
+    </footer>
+    
+</body>
+</html>
+
+
+<script>
+    function competences(button) {
+        console.log(button); console.log(button.getAttribute(name));
+      //la div 0 est la div qui doit etre afficher, on reccupere le name de button pour savoir quel div va etre activer
+      div0 =  document.getElementById(button.getAttribute("name"));
+      //les autres div
+      var div = document.getElementById("competences");
+      var div2 = document.getElementById("contact");
+      var div3 = document.getElementById("projets");
+      var div4 = document.getElementById("welcome");
+      //jefface tout
+      div.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      div4.style.display = "none";
+      //jaffiche seulement la div qui a ete cliquer
+      div0.style.display = "block";
+    }
+
+    function projets(button) {
+      //la div 0 est la div qui doit etre afficher, on reccupere le name de button pour savoir quel div va etre activer
+      div0 =  document.getElementById(button.getAttribute("name"));
+      //les autres div
+      var div = document.getElementById("competences");
+      var div2 = document.getElementById("contact");
+      var div3 = document.getElementById("projets");
+      var div4 = document.getElementById("welcome");
+      //jefface tout
+      div.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      div4.style.display = "none";
+      //jaffiche seulement la div qui a ete cliquer
+      div0.style.display = "block";
+    }
+    function contact(button) {
+      //la div 0 est la div qui doit etre afficher, on reccupere le name de button pour savoir quel div va etre activer
+      div0 =  document.getElementById(button.getAttribute("name"));
+      //les autres div
+      var div = document.getElementById("competences");
+      var div2 = document.getElementById("contact");
+      var div3 = document.getElementById("projets");
+      var div4 = document.getElementById("welcome");
+      //jefface tout
+      div.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      div4.style.display = "none";
+      //jaffiche seulement la div qui a ete cliquer
+      div0.style.display = "block";
+    }
+
+
+    </script>
